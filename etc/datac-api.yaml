@@ -1,0 +1,21 @@
+Name: datac-api
+Host: 0.0.0.0
+Port: 8888
+Log:
+  ServiceName: datac
+  Mode: file #options=[console,file,volume]
+  Encoding: json #options=[json,plain]
+#  TimeFormat:
+#  Path:
+  Level: info #options=[info,error,severe]
+  Compress: true
+  KeepDays: 30
+#  StackCooldownMillis: 100 q
+MysqlDSN: root:123456@tcp(localhost:33306)/local?charset=utf8mb4&parseTime=True&loc=Local
+Minio:
+  Endpoint:
+  AccesskeyID:
+  SecretAccessKey:
+  Secure:
+  ImagePrefix:
+  Location:
